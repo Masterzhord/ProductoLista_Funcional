@@ -9,6 +9,7 @@ import aplicacion.interfaces.dao.IProductoDAO;
 import aplicacion.modelo.dominio.Producto;
 import aplicacion.modelo.util.ListaProducto;
 import java.io.Serializable;
+import java.text.ParseException;
 import java.util.List;
 
 /**
@@ -20,7 +21,7 @@ public class ProductoListDAOImp implements Serializable, IProductoDAO{
     private ListaProducto listaproducto;
 
     //Contructor vacio
-    public ProductoListDAOImp() {
+    public ProductoListDAOImp() throws ParseException {
         listaproducto = new ListaProducto();
     }
     

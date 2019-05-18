@@ -12,14 +12,14 @@ import java.io.Serializable;
  * @author Masterzhord
  */
 public class Producto implements Serializable{
- private int id;
+ private String Codigo;
  private String nombre;
- private int cantidad;
+ private String cantidad;
  private String marca;
  private String talle;
  private String color;
  private String origen;
- private float precio;
+ private String precio;
 
  // Contructor Vacio
  
@@ -27,8 +27,8 @@ public class Producto implements Serializable{
     }
  // Contructor con parametros 
     
-    public Producto(int id, String nombre, int cantidad, String marca, String talle, String color, String origen, float precio) {
-        this.id = id;
+    public Producto(String Codigo, String nombre, String cantidad, String marca, String talle, String color, String origen, String precio) {
+        this.Codigo = Codigo;
         this.nombre = nombre;
         this.cantidad = cantidad;
         this.marca = marca;
@@ -40,15 +40,15 @@ public class Producto implements Serializable{
 
     
     //Getter and Setter
+
+    public String getCodigo() {
+        return Codigo;
+    }
+
+    public void setCodigo(String Codigo) {
+        this.Codigo = Codigo;
+    }
     
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
     public String getNombre() {
         return nombre;
     }
@@ -57,11 +57,11 @@ public class Producto implements Serializable{
         this.nombre = nombre;
     }
 
-    public int getCantidad() {
+    public String getCantidad() {
         return cantidad;
     }
 
-    public void setCantidad(int cantidad) {
+    public void setCantidad(String cantidad) {
         this.cantidad = cantidad;
     }
 
@@ -97,11 +97,11 @@ public class Producto implements Serializable{
         this.origen = origen;
     }
 
-    public float getPrecio() {
+    public String getPrecio() {
         return precio;
     }
 
-    public void setPrecio(float precio) {
+    public void setPrecio(String precio) {
         this.precio = precio;
     }
  

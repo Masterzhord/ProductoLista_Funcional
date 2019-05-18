@@ -14,6 +14,8 @@ import java.util.List;
  */
 public interface IProductoDAO {
     
+    // agrega un nuevo producto
     void crearProducto (Producto producto);
+     // lista todos los productos
     List <Producto>obtener();
 }
